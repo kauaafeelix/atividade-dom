@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link><a href="style.css"></a>
+    <link rel="stylesheet" href="style.css">
     <title>Contador</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -16,15 +16,18 @@
 </head>
 <body>
     <main>
+        <div>
+            <h1 class="text-4xl text-center p-6 bg-gray-800 text-gray-100">Contador de Números</h1>
+        </div>
         <div id="blocos container" class="w-full flex flex-row h-screen justify-around items-center">
-            <div id="bloco-aumentar" class="">
-                <p>+1</p>
+            <div id="bloco-diminuir" class="w-1/5 bg-orange-500 text-gray-800 text-4xl pt-10 pb-10 text-center rounded-lg">
+                <p>-1</p>
             </div>
-            <div id="bloco-contador" class="">
+            <div id="bloco-contador" class="w-1/3 bg-gray-800 text-gray-100 text-8xl p-10 pt-20 pb-20 text-center rounded-lg">
                 <p>0</p>
             </div>
-            <div id="bloco-diminuir" class="">
-                <p>-1</p>
+            <div id="bloco-aumentar" class="w-1/5 bg-orange-500 text-gray-800 text-4xl p-4 pt-10 pb-10 text-center rounded-lg">
+                <p>+1</p>
             </div>
         </div>
     </main>
